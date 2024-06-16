@@ -1,4 +1,4 @@
-import axios from "axios";
+/*import axios from "axios";
 import { createContext, useContext, useEffect, useReducer } from "react";
 
 // Definimos el estado inicial
@@ -56,3 +56,4 @@ export const useDentistContext = () => {
 };
 
 export default ContextProvider;
+*/

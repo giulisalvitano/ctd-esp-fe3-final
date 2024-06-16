@@ -3,8 +3,9 @@ import React from "react";
 const Envio = ({ cliente }) => {
   return (
     <>
-      <h3>Gracias por tu compra, {cliente.nombre}!</h3>
-      <h3>En 20 minutos va tu pedido a {cliente.email}.</h3>
+      <h3>Gracias {cliente.nombre}, te contactaremos cuando antes vía mail.</h3>
+      <p>Tu email: {cliente.email}</p>
+      <p>Tu descripción: {cliente.descripcion}</p>
     </>
   );
 };

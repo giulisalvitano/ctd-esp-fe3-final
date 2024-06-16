@@ -7,9 +7,9 @@ const Navbar = () => {
   const { state, dispatch } = useDentistStates();
   const isDarkTheme = state.theme;
 
-  const handleThemeChange = () => {
+  /*const handleThemeChange = () => {
     dispatch({ type: 'CHANGE_THEME' });
-  };
+  };*/
   
   return (
     <nav>
@@ -17,7 +17,7 @@ const Navbar = () => {
       <Link to={routes.contact}><h4>Contacto</h4></Link>
       <Link to={routes.favs}><h4>Favs</h4></Link>
       <button onClick={() => dispatch({ type: "CHANGE_THEME" })}>
-      {isDarkTheme ? '🌙' : '☀️'}</button>
+      {isDarkTheme ? '☀️' : '🌙'}</button>
     </nav>
   )
 }
