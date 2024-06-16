@@ -21,7 +21,7 @@ const Form = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    const regex =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/ 
 
     if (
       cliente.nombre.trim().length > 3 && regex.test(cliente.email) &&

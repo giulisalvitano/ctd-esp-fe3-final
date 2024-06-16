@@ -16,19 +16,19 @@ const Card = ({ dentist }) => {
   return (
     <div className="card">
       <Link to={"/detail/" + dentist.id}>
-        <h2>{dentist.name}</h2>
+      <img src="./images/doctor.jpg" alt='doctor' width={210} />
+      <h4>{dentist.name}</h4>
       </Link>
-      <h4>
-        {dentist.username} - ID: {dentist.id}
-      </h4>
+      <h5>
+        {dentist.username}
+      </h5>
         <button onClick={handleFavoriteDentist} className="favButton">
           {isDentistInFavorites
-            ? 'Remove fav ❌'
-            : 'Add fav ⭐'}
+            ? '❌'
+            : '⭐'}
         </button>
     </div>
   );
 };
 
 export default Card;
-<img src="./images/doctor.jpg" alt="" />
