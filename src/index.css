@@ -24,10 +24,14 @@ h1{
 }
 
 nav{
-  display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+    display: flex;
+    width: 80vw;
+    justify-content: flex-end;
+    padding: 1rem;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    padding: 25px;
 }
 
 a{
@@ -49,7 +53,7 @@ footer {
   bottom: 0;
   width: 90%;
   height: 40px;
-  margin-top: 2rem;
+  margin-top: 80px;
 }
 
 footer > img{
@@ -82,7 +86,7 @@ form{
 
 
 .card:hover{
-  border: 0.8px solid rgb(80, 3, 98);
+  border: 0.px solid rgb(80, 3, 98);
   transition: 0.2s;
   transform: scale(1.1);
 }
@@ -119,10 +123,143 @@ tr:nth-child(even) {
 }
 
 .dark{
-  background-color: #12121296;
+  background-color: #0000004b;
   color: white;
 }
+
 .dark > a {
   color: white;
 }
 
+
+.redes{
+  height: 20px;
+
+
+}
+
+
+.DHlogo{
+  height: 20px;
+}
+
+
+
+
+/*DARK MODE*/
+.dark{
+  background-color: #5b565696;
+  color: white;
+}
+
+.dark nav, .dark footer{
+  background-color: #7201016c;
+  width:auto;
+
+}
+
+.dark nav a, .dark nav button{
+  color: white;
+}
+
+.dark a:hover, .dark nav button:hover{
+  color: rgb(0, 0, 0);
+}
+
+
+.dark nav button{
+  background-color: #666363;
+}
+.dark .card{
+  border: 0.5px solid rgb(246, 246, 246);
+  background-color: #464545;
+  border-radius: 27px;
+}
+
+.dark .favButton{
+  background-color: rgba(244, 233, 233, 0.64);
+  border-radius: 80px;
+}
+
+
+.dark table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  background-color: rgb(34, 34, 34);
+
+}
+
+.dark td, .dark th, .dark input {
+border: 1px solid #000000;
+text-align: left;
+padding: 8px;
+}
+
+
+.dark form button{
+  background-color: rgba(17, 8, 8, 0.707);
+  color: white;
+  font-weight: bold;
+  border-radius: 90px;
+}
+
+
+
+
+/* LIGHT MODE */
+.light {
+  background-color: #ffffff;
+  color: black;
+  height: 100%;
+}
+
+.light nav,
+.light footer {
+  background-color: #f0f0f0;
+  width:auto;
+}
+
+.light .card {
+  border: 0.5px solid rgb(58, 21, 21);
+  background-color: #f8e4e482;
+}
+
+.light .favButton {
+  background-color: rgba(9, 67, 106, 0.622);
+}
+
+
+.light table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  background-color: #ce848455;
+}
+
+.light td,
+.light th,
+.light input {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+.light tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.light .card:hover,
+.light .contact form input:hover,
+.light .contact form button:hover {
+  border: 0.5px solid rgb(136, 13, 13);
+  
+}
+
+.light form button {
+  background-color: rgba(194, 194, 194, 0.438);
+  color: black;
+  font-weight: bold;
+}
