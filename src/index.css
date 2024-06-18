@@ -101,7 +101,7 @@ footer > img{
   justify-content: space-between;
   align-items: center;
   padding: 10px 80px;
-  background-color: #b4b4b4c4;
+  background-color: #9a949494;
 }
 
 .footer-left {
@@ -208,12 +208,12 @@ tr:nth-child(even) {
 
 /*DARK MODE*/
 .dark{
-  background-color: #5b565696;
+  background-color: #797979c0;
   color: white;
 }
 
 .dark nav, .dark footer{
-  background-color: #7201016c;
+  background-color: #080404e1;
   width:auto;
 
 }
@@ -227,17 +227,13 @@ tr:nth-child(even) {
 }
 
 
-.dark nav button{
-  background-color: #666363;
-}
 .dark .card{
   border: 0.5px solid rgb(246, 246, 246);
-  background-color: #464545;
-  border-radius: 27px;
+  background-color: #49494999;
 }
 
 .dark .favButton{
-  background-color: rgba(244, 233, 233, 0.64);
+  background-color: rgba(61, 60, 60, 0.64);
   border-radius: 80px;
 }
 
