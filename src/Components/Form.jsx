@@ -43,10 +43,13 @@ const Form = () => {
       <form onSubmit={handleSubmit}>
         <label>Nombre Completo:</label>
         <input type="text" value={cliente.nombre} onChange={handleName} />
+
         <label>Email:</label>
         <input type="email" value={cliente.email} onChange={handleEmail} />
+        
         <label>Descripción:</label>
-        <textarea value={cliente.descripcion} onChange={handleDescripcion}></textarea>
+        <textarea value={cliente.descripcion} onChange={handleDescripcion} style={{ width: "100%", height: "200px" }} ></textarea>
+
         <Button>Enviar</Button>
       </form>
       {error && <p style={{ color: "red" }}>Por favor verifique su información nuevamente</p>}

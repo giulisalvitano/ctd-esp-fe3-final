@@ -15,7 +15,7 @@ const Favs = () => {
   return (
     <>
       <div className="favs">
-        <h1>Dentists Favs</h1>
+        <h1>Dentistas favoritos</h1>
         <div className="card-grid">
           {dentistList.map((dentist) => (
             <Card dentist={dentist} key={dentist.id} />

@@ -19,6 +19,8 @@ code {
   cursor: pointer;
 }
 
+
+
 h1{
   text-align: center;
 }
@@ -34,6 +36,43 @@ nav{
     padding: 25px;
 }
 
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left h2 {
+  margin: 0;
+  padding: -10 10px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right h4 {
+  margin: 0 10px;
+}
+
+.navbar-right button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+
 a{
   color: #000;
   text-decoration: none;
@@ -44,15 +83,10 @@ a:hover{
   color: rgb(136, 136, 136);
 } 
 
+
+/*FOOTER*/
+
 footer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  bottom: 0;
-  width: 90%;
-  height: 40px;
   margin-top: 80px;
 }
 
@@ -60,18 +94,44 @@ footer > img{
   width: 200px;
   margin: 0;
 }
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background-color: #b4b4b4c4;
 }
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left img {
+  height: 40px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right img {
+  height: 30px;
+  margin-left: 10px;
+}
+
 
 form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
-  height: 100px;
+  height: 224px;
   margin: 0 auto;
+  align-items: flex-start;
 }
 
 .card{
