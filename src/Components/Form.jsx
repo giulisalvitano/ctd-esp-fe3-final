@@ -23,9 +23,9 @@ const Form = () => {
     if (
       cliente.nombre.trim().length > 5 &&
       regex.test(cliente.email) &&
-      cliente.descripcion.trim().length > 15
+      cliente.descripcion.trim().length > 5
     ) {
-      console.log(cliente); // Mostrar en consola los datos submiteados
+      console.log(cliente);
       setShow(true);
       setError(false);
     } else {
@@ -52,7 +52,7 @@ const Form = () => {
 
         <Button>Enviar</Button>
       </form>
-      {error && <p style={{ color: "red" }}>Por favor verifique su información nuevamente</p>}
+      {error && <p style={{ color: "red"}}>Por favor verifique su información nuevamente</p>}
     </>
   );
 };

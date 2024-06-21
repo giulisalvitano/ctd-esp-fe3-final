@@ -7,9 +7,6 @@ const Navbar = () => {
   const { state, dispatch } = useDentistStates();
   const isDarkTheme = state.theme;
 
-  /*const handleThemeChange = () => {
-    dispatch({ type: 'CHANGE_THEME' });
-  };*/
   
   return (
     <nav className="navbar">
